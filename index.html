@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <body class="bg-zinc-100 dark:bg-zinc-800 p-4">
+        <div class="max-w-4xl mx-auto bg-white dark:bg-zinc-900 shadow-lg rounded-lg p-6">
+            <div class="mb-4">
+                <h2 class="text-lg font-semibold text-zinc-800 dark:text-white">Semester wise Attendance</h2>
+            </div>
+            <div class="flex justify-between mb-4">
+                <div class="flex gap-2">
+                    <div>
+                        <label for="year" class="block text-sm font-medium text-zinc-700 dark:text-zinc-200">Year
+                            *</label>
+                        <select id="year" name="year"
+                            class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-zinc-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md">
+                            <option>2024</option>
+                            <option>2023</option>
+                            <option>2022</option>
+                            <option>2021</option>
+                            <option>2020</option>
+                            <option>2019</option>
+                            <option>2018</option>
+                            <option>2017</option>
+                            <option>2016</option>
+                            <option>2015</option>
+                            <option>2014</option>
+                            <option>2013</option>
+                            <option>2012</option>
+                            <option>2011</option>
+
+                        </select>
+                    </div>
+                    <div>
+                        <label for="semester"
+                            class="block text-sm font-medium text-zinc-700 dark:text-zinc-200">Semester *</label>
+                        <select id="semester" name="semester"
+                            class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-zinc-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md">
+                            <option>Summer</option>
+                            <option>Auntum</option>
+                            <option>Spring</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    LOAD
+                </button>
+            </div>
+            <div class="overflow-x-auto relative shadow-md sm:rounded-lg">
+                <table class="w-full text-sm text-left text-zinc-500 dark:text-zinc-400">
+                    <thead class="text-xs text-zinc-700 uppercase bg-zinc-50 dark:bg-zinc-700 dark:text-zinc-400">
+                        <tr>
+                            <th scope="col" class="py-3 px-6">Code</th>
+                            <th scope="col" class="py-3 px-6">Name</th>
+                            <th scope="col" class="py-3 px-6">Sec</th>
+                            <th scope="col" class="py-3 px-6">Room</th>
+                            <th scope="col" class="py-3 px-6">Time</th>
+                            <th scope="col" class="py-3 px-6">Attendance*</th>
+                            <th scope="col" class="py-3 px-6">Grade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white border-b dark:bg-zinc-800 dark:border-zinc-700">
+                            <td class="py-4 px-6">CSC101</td>
+                            <td class="py-4 px-6">Introduction to Computer Science</td>
+                            <td class="py-4 px-6">5</td>
+                            <td class="py-4 px-6">CSCLab1</td>
+                            <td class="py-4 px-6">MW:13:00-14:30</td>
+                            <td class="py-4 px-6">0 / 0</td>
+                            <td class="py-4 px-6">Z</td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-zinc-800 dark:border-zinc-700">
+                            <td class="py-4 px-6">CSC101 LAB</td>
+                            <td class="py-4 px-6">Lab for CSC101</td>
+                            <td class="py-4 px-6">5</td>
+                            <td class="py-4 px-6">CSCLab1</td>
+                            <td class="py-4 px-6">MW:09:40-11:10</td>
+                            <td class="py-4 px-6">0 / 0</td>
+                            <td class="py-4 px-6">Z</td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-zinc-800 dark:border-zinc-700">
+                            <td class="py-4 px-6">ENG101</td>
+                            <td class="py-4 px-6">English Listening and Speaking</td>
+                            <td class="py-4 px-6">4</td>
+                            <td class="py-4 px-6">Bc7015</td>
+                            <td class="py-4 px-6">ST:13:00-14:30</td>
+                            <td class="py-4 px-6">0 / 0</td>
+                            <td class="py-4 px-6">Z</td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-zinc-800 dark:border-zinc-700">
+                            <td class="py-4 px-6">CSC101</td>
+                            <td class="py-4 px-6">Introduction to Computer Science</td>
+                            <td class="py-4 px-6">5</td>
+                            <td class="py-4 px-6">CSCLab1</td>
+                            <td class="py-4 px-6">MW:13:00-14:30</td>
+                            <td class="py-4 px-6">0 / 0</td>
+                            <td class="py-4 px-6 ">Z</td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-zinc-800 dark:border-zinc-700">
+                            <td class="py-4 px-6">MAT104</td>
+                            <td class="py-4 px-6">Calculus and analytical geometry</td>
+                            <td class="py-4 px-6">1</td>
+                            <td class="py-4 px-6">BC6007</td>
+                            <td class="py-4 px-6">MW:11:20-12:50</td>
+                            <td class="py-4 px-6">0 / 0</td>
+                            <td class="py-4 px-6">Z</td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-zinc-800 dark:border-zinc-700">
+                            <td class="py-4 px-6">PHY101</td>
+                            <td class="py-4 px-6">University Physics-I</td>
+                            <td class="py-4 px-6">4</td>
+                            <td class="py-4 px-6">BC6009</td>
+                            <td class="py-4 px-6"> MW:08:00-09:30</td>
+                            <td class="py-4 px-6">0 / 0</td>
+                            <td class="py-4 px-6">Z</td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-zinc-800 dark:border-zinc-700">
+                            <td class="py-4 px-6">PHY101 LAB</td>
+                            <td class="py-4 px-6">University Physics-I LAB</td>
+                            <td class="py-4 px-6">5</td>
+                            <td class="py-4 px-6">PLab</td>
+                            <td class="py-4 px-6">S:09:40-11:10</td>
+                            <td class="py-4 px-6">0 / 0</td>
+                            <td class="py-4 px-6">Z</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="flex justify-end space-x-4 mt-4">
+                <button
+                    class="flex items-center px-4 py-2 bg-blue-500 text-white text-sm font-medium rounded-md hover:bg-blue-600">
+                    TRANSCRIPT
+                </button>
+                <button
+                    class="flex items-center px-4 py-2 bg-blue-500 text-white text-sm font-medium rounded-md hover:bg-blue-600">
+                    ATTENDANCE REPORT
+                </button>
+            </div>
+            <div class="text-xs text-zinc-600 dark:text-zinc-400 mt-2">
+                * Attendance = Attend/Total Class Count
+            </div>
+        </div>
+    </body>
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
